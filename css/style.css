@@ -1,0 +1,52 @@
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+
+#ico_game {
+  height: 15em;
+  width: auto;
+  margin-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+  #ico_game {
+    display: none;
+  }
+}
+
+.portret {
+  border-radius: 10px;
+  height: 15em;
+  width: auto;
+  margin-bottom: 1em;
+  transition: 0.1s;
+}
+
+.img_clanky {
+  width: 100%;
+  height: auto;
+  padding-bottom: 2em;
+}
+
+.portret:hover {
+  cursor: grab;
+  height: 17em;
+  width: auto;
+}
+
+.mojebtn{
+  box-shadow: 1px 1px 1px #1f9bcf;
+}
+
+.mojebtn:active{
+  color: #1f9bcf;
+}
+

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hobby web pro herní design: rozcestník, články, informace" />
+  <meta name="author" content="Adam Mlázovský" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <title>Herní design</title>
+</head>
+
+<body>
+  <!-- Navigace -->
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-5 pt-3 pb-1 fixed-top">
+    <a href="index.html" class="navbar-brand h4">Herní design</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto h5">
+        <li class="nav-item">
+          <a href="#clanky" class="nav-link text-info">Články</a>
+        </li>
+        <li class="nav-item">
+          <a href="#studium" class="nav-link text-info">Studium</a>
+        </li>
+        <li class="nav-item">
+          <a href="#rozcestnik" class="nav-link text-info">Rozcestník</a>
+        </li>
+        <li class="nav-item">
+          <a href="#osobnosti" class="nav-link text-info">Osobnosti</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!--Carousel-->
+  <section class="p-4 bg-dark">
+    <div class="container">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/1.jpg" class="d-block w-100" alt="Mass Effect" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/2.jpg" class="d-block w-100" alt="Angry Birds" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/3.jpg" class="d-block w-100" alt="Destiny" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/4.jpg" class="d-block w-100" alt="God Of War" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/5.jpg" class="d-block w-100" alt="Far Cry" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase -->
+  <section class="bg-secondary text-dark p-4 p-lg-0 pt-lg-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <img id="ico_game" src="img/icona.gif" alt="ikona game design" />
+        </div>
+        <div class="col-md-6 fs-4">
+          <h1>
+            <span class="text-info"> HERNÍ DESIGNER </span>
+          </h1>
+          <p class="lead my-4">
+          <ul style="list-style-type:square;">
+            <li>ten, který hry neprogramuje, ale vytváří</li>
+            <li>ten, který vymýšlí
+              obsah, scénář, mise, úkoly, překážky, zajímavosti</li>
+            <li>ten, který je zodpovědný za maximální herní prožitek...</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Články-->
+  <section id="clanky" class="p-4 bg-primary">
+    <div class="container">
+      <h2 class="text-center text-white mb-3">Články o herním designu</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="img/clanky1.jpg" class="mb-3 img-fluid" alt="Mass Effect" />
+              <h3 class="card-title mb-3">Úvod do herního designu</h3>
+              <p class="card-text">
+                Přiblížení práce herního designera, cíle, herní mechaniky, žánry,
+                kategorie.
+              </p>
+              <a href="uvod_1.html" class="btn btn-dark mojebtn">článek 1</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="img/clanky2.jpg" class="mb-3 img-fluid" alt="Angry Birds" />
+              <h3 class="card-title mb-3">Level design</h3>
+              <p class="card-text">
+                Učení hry, intuitivnost a zábava, procházení a proměny světa,
+                doplňování příběhu, riskování, postupy při práci herního designera.
+              </p>
+              <a href="level_design_2.html" class="btn btn-dark mojebtn">článek 2</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="img/clanky3.jpg" class="mb-3 img-fluid" alt="Destiny" />
+              <h3 class="card-title mb-3">UI design</h3>
+              <p class="card-text">
+                Rozdíl UI a UX, herní položky, přesnost a přehlednost, ovlivňování obtížnosti,
+                UI jako součást světa, využití barev, zajímavá místa.
+              </p>
+              <a href="UI_design_3.html" class="btn btn-dark mojebtn">článek 3</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="img/clanky4.jpg" class="mb-3 img-fluid" alt="God Of War" />
+              <h3 class="card-title mb-3">Design nepřátel</h3>
+              <p class="card-text">
+                Nové designy nepřátel, sada útoků - moveset, interakce s nepřítelem, reskin nepřátel,
+                design lidí, obtížnost a její úpravy.
+              </p>
+              <a href="Design_nepratel_4.html" class="btn btn-dark mojebtn">článek 4</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img src="img/clanky5.jpg" class="mb-3 img-fluid" alt="Far Cry" />
+              <h3 class="card-title mb-3">Systém design</h3>
+              <p class="card-text">
+                Balancování hry, symetrické a asymetrické hry, rozpočet síly, buffy a nerfy postav,
+                countery, procentuální výhernost.
+              </p>
+              <a href="System_design_5.html" class="btn btn-dark mojebtn">článek 5</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Studium -->
+  <section id="studium" class="p-4">
+    <div class="container">
+      <h2 class="text-center mb-4">Studium <small class="text-muted"> odkazy</small></h2>
+      <div class="accordion accordion-flush" id="vzdelani">
+        <!-- Item 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skoly2">
+              FEL ČVUT (Praha)
+            </button>
+          </h2>
+          <div id="skoly2" class="accordion-collapse collapse" data-bs-parent="#vzdelani">
+            <div class="accordion-body">
+              <h3>
+                <a href="https://fel.cvut.cz/cz/education/bk/pruchody/pr956142326605" target="_blank"
+                  class="text-info">Počítačové hry a grafika</a>
+              </h3>
+              <p>
+                Prezenční studium bakalářské (3 roky) a navazující magisterské (2 roky). Důraz
+                je kladen na produkci 2D a 3D grafického obsahu. Absolventi
+                budou připraveni pro práci v designerském studiu.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skoly1">
+              Katedra herního designu na FAMU (Praha)
+            </button>
+          </h2>
+          <div id="skoly1" class="accordion-collapse collapse" data-bs-parent="#vzdelani">
+            <div class="accordion-body">
+              <h3><a href="https://hernidesign.famu.cz/" target="_blank" class="text-info">Herní design</a></h3>
+              <p>
+                Magisterský studijní program (2 roky) je určený pro absolventy
+                bakalářského a magisterského vysokoškolského studia. Program
+                je prezenční, dvouletý. Absolvent je připravený pracovat na
+                pozici: herní designér, level designér, herní scénárista,
+                kreativní manažer v herním studiu.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#skoly3">
+              Ateliér Game Design na Univerzitě Tomáše Bati (Zlín)
+            </button>
+          </h2>
+          <div id="skoly3" class="accordion-collapse collapse" data-bs-parent="#vzdelani">
+            <div class="accordion-body">
+              <h3>
+                <a href="https://fmk.utb.cz/o-fakulte/zakladni-informace/ateliery-ustavy-a-kabinety/atelier-game-design/chci-studovat-game-design/"
+                  target="_blank" class="text-info">Game
+                  Design</a>
+              </h3>
+              <p>
+                Studijní program je určený pro absolventy bakalářského a
+                magisterského vysokoškolského studia. Přijímací řízení se
+                skládá z talentové a ústní zkoušky. Výuka je prezenční.
+                Studenti si vyzkouší celý proces tvorby hry a jednotlivé herní
+                profese.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-four">
+              GameDevHub Czech s.r.o.
+            </button>
+          </h2>
+          <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#vzdelani">
+            <div class="accordion-body">
+              <h3>
+                <a href="https://www.gamedevhub.cz/course/hern-design-102" target="_blank" class="text-info">12 týdenní
+                  kurz</a>
+              </h3>
+              <p>
+                Distanční kurz herního designu ve formě večerní online výuky za 14.700,- Kč. Lze absolvovat při
+                zaměstnání
+                či studiu. Absolvent získá potřebné znalosti pro nástup na juniorskou pozici do herního studia i
+                kontakty na lidi z oboru.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#question-five">
+              Další možnosti studia
+            </button>
+          </h2>
+          <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#vzdelani">
+            <div class="accordion-body">
+              <a href="https://gamedev.cuni.cz/studium/herni-obory/game-design-na-ff-uk/" target="_blank"
+                class="text-info padding-left-0">Kurzy
+                při FF UK</a><br>
+              <a href="https://www.bachelorstudies.cz/Hern%C3%AD-design/" target="_blank"
+                class="text-info pl-0">Zahraniční školy</a><br>
+              <a href="https://visiongame.cz/kde-v-cesku-studovat-pocitacove-hry/" target="_blank"
+                class="text-info pl-0">Další tipy na studium v ČR</a><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Odkazy -->
+  <section id="rozcestnik" class="p-4 bg-dark text-light">
+
+    <div class="container">
+      <h2 class="text-center text-white mb-4">Rozcestník <small class="text-muted"> odkazy</small></h2>
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="card bg-light mb-3">
+            <div class="card-body">
+              <h3 class="card-title text-info text-center">Videa</h3>
+              <ul style="list-style-type:square" class="text-dark">
+                <li>
+                  <a href="https://www.youtube.com/watch?v=JsE1UWWRiz8" target="_blank" class="text-decoration-none">Dan
+                    Vávra - Game design v praxi</a><br>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=G8AT01tuyrk" target="_blank"
+                    class="text-decoration-none">Basic Principles of Game Design</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=pF2LGYVRCwI" target="_blank" class="text-decoration-none">5
+                    Principles of Game Design (Rand Miller)</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=IRryQa9nf2k" target="_blank" class="text-decoration-none">10
+                    Best Video Game User Interfaces</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=PMXf0e8n2Oc" target="_blank" class="text-decoration-none">
+                    How to Become a Game Designer</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=zQvWMdWhFCc" target="_blank" class="text-decoration-none">
+                    Career Advice for Making Games</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="card bg-light mb-1">
+            <div class="card-body">
+              <h3 class="card-title text-info text-center">Weby</h3>
+              <ul style="list-style-type:square" class="text-dark">
+                <li>
+                  <a href="https://www.gamedesigning.org/blogs/" target="_blank"
+                    class="text-decoration-none">Gamedesigning.org</a><br>
+                </li>
+                <li>
+                  <a href="https://www.gamedeveloper.com/" target="_blank"
+                    class="text-decoration-none">GameDeveloper.com</a><br>
+                </li>
+                <li>
+                  <a href="https://www.thebestcolleges.org/rankings/top-video-game-design-blogs/" target="_blank"
+                    class="text-decoration-none">Top 40 Video Game Design Blogs of 2019</a><br>
+                </li>
+                <li>
+                  <a href="https://www.pulsecollege.com/game-design-blogs/" target="_blank"
+                    class="text-decoration-none">Top 10 Games Design Blogs</a><br>
+                </li>
+                <li>
+                  <a href="https://is.muni.cz/thesis/prace_na_stejne_tema?ks=game%20design" target="_blank"
+                    class="text-decoration-none">Studentské práce</a>
+                </li>
+                <li>
+                  <a href=" https://www.gamedesigning.org/category/schools/" target="_blank"
+                    class="text-decoration-none">Game Design Education</a><br>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Osobnosti-->
+  <section id="osobnosti" class="p-5">
+    <div class="container">
+      <h2 class="text-center text-info pb-5">OSOBNOSTI herního designu</h2>
+
+      <div class="my-2">
+        <img src="img/osobnost2.jpg" style="float:left; padding-right:2em;" class="portret" alt="Patrice Désilets" />
+        <h3 class="my-4">Patrice&nbsp;Désilets</h3>
+        <p>
+          Kanadský herní designér známý díky tvorbě série <span class="text-info fw-bold">Assassin's Creed</span>. Je
+          také známý jako režisér filmu <span class="text-info fw-bold">Prince of Persia</span>: The Sands of Time od
+          Ubisoftu. V roce 2014 založil montrealské
+          nezávislé studio Panache Digital
+          Games, kde pracoval na hře <span class="text-info fw-bold">Ancestors</span>: The Humankind Odyssey.</p>
+        <p>Získal bakalářský titul ve filmových studiích a literatuře na University of Montreal. Pochází z filmového
+          prostředí a svou tvůrčí vizi využil k formování her, ve kterých se ujal kreativního vedení. Mezi další tituly
+          Désiletse patří Disneyho <span class="text-info fw-bold">Donald Duck</span>: Goin' Quackers a <span
+            class="text-info fw-bold">Hype</span>: The Time Quest.
+        </p>
+        <br>
+      </div>
+
+      <div class="my-2 text-end">
+        <img src="img/osobnost1.jpg" style="float:right; padding-left:2em;" class="portret" alt="Shigeru Miyamoto" />
+        <h3 class="my-4">Shigeru&nbsp;Miyamoto</h3>
+        <p class="text-end">
+          Japonský designér videoher, producent a herní režisér, působící ve společnosti Nintendo. Je považován za
+          jednoho z nejvýznamnějších herních designérů v historii. Je tvůrcem některých z nejprodávanějších her všech
+          dob, včetně <span class="text-info fw-bold">Mario</span>, <span class="text-info fw-bold">The Legend of
+            Zelda</span>, <span class="text-info fw-bold">Donkey Kong</span>...
+        </p>
+        <p>
+          Jeho hry byly vlajkovou lodí každé videoherní konzole Nintendo, od arkádových automatů z konce 70. let až
+          po současnost. Řídil softwarovou divizi Nintendo Entertainment Analysis & Development, která vyvinula mnoho
+          her pro Nintendo, a hrál důležitou roli při vytváření dalších vlivných her, jako jsou <span
+            class="text-info fw-bold">Pokémon Red and Blue</span> a
+          <span class="text-info fw-bold">Metroid Prime</span>.
+        </p>
+        <br>
+      </div>
+
+
+
+      <div class="mb-2 mt-4">
+        <img src="img/osobnost3.jpg" style="float:left; padding-right:2em;" class="portret" alt="Jon Van Caneghem" />
+        <h3 class="my-4">Jon&nbsp;Van&nbsp;Caneghem</h3>
+        <p>
+          Americký režisér, designér a producent videoher. Založil vývojové studio New World Computing a v roce 1986
+          debutoval jako designér knihou Might and Magic Book One: The Secret of the Inner Sanctum.
+        </p>
+        <p>
+          Z dílny New World Computing pochází jedna z prvních her na hrdiny – středověká fantasy <span
+            class="text-info fw-bold">Might and Magic</span>:
+          Secret of the Inner Sanctum. V roce 1990 Jon Caneghem vydal <span class="text-info fw-bold">King's
+            Bounty</span>, předchůdce série sedmi her <span class="text-info fw-bold">Heroes
+            of Might and Magic</span>, které obsahují tahové konflikty s fantasy tématikou, ve kterých hráči ovládají
+          armády
+          mýtických tvorů.
+        </p>
+        <p>
+          Jon Caneghem byl uveden do Síně slávy světa počítačových her v roce 2004 za strategii a hraní rolí.
+        </p>
+        <br>
+      </div>
+
+
+      <div class="my-2 text-end">
+        <img src="img/osobnost4.jpg" style="float:right; padding-left:2em;" class="portret" alt="Hidetaka Miyazaki" />
+        <h3 class="my-4">Hidetaka&nbsp;Miyazaki</h3>
+        <p class="text-end">
+          Japonský kreativní ředitel, designér, scénárista a výkonný ředitel videoherní společnosti FromSoftware. Stal
+          se známým díky režii série <span class="text-info fw-bold">Souls</span>. V roce 2014 byl povýšen na prezidenta
+          společnosti a působí také jako její
+          zástupce ředitele.
+        </p>
+        <p>
+          Mezi další pozoruhodné hry, které režíroval, patří <span class="text-info fw-bold">Bloodborne</span>, <span
+            class="text-info fw-bold">Sekiro</span>: Shadows Die Twice a <span class="text-info fw-bold">Elden
+            Ring</span>, které všechny získaly uznání kritiků a získaly několik cen. K významným projektům patří také
+          hra pro virtuální
+          realitu <span class="text-info fw-bold">Déraciné</span> a akční adventura <span
+            class="text-info fw-bold">Sekiro</span>: Shadows Die Twice.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-3 bg-primary text-white text-center position-relative vertical-alignment-center">
+    <div class="container pb-0">
+      <p>Copyright &copy; 2022 - <a href="O_mne.html" class="text-info text-decoration-none">Adam
+        Mlázovský</a></p>
+    </div>
+    <a href="#" class="position-absolute bottom-0 end-0 p-4">
+      <i class="bi bi-arrow-up-circle h1 text-info"></i>
+    </a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

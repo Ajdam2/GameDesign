@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hobby web pro herní design: článek 1 - Game Design úvod" />
+  <meta name="author" content="Adam Mlázovský" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+  <title>UI design</title>
+</head>
+
+<body>
+  <!-- Navigace -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-5 pt-3 pb-1 fixed-top">
+    <a href="index.html" class="navbar-brand h4">Herní design </a><span class="text-info"> 3) UI design</span>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto h5">
+        <li class="nav-item">
+          <a href="uvod_1.html" class="nav-link">1</a>
+        </li>
+        <li class="nav-item">
+          <a href="level_design_2.html" class="nav-link">2</a>
+        </li>
+        <li class="nav-item">
+          <a href="Design_nepratel_4.html" class="nav-link">4</a>
+        </li>
+        <li class="nav-item">
+          <a href="System_design_5.html" class="nav-link">5</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link text-info">ZPĚT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Článek-->
+  <section class="p-4">
+
+    <div class="container border border-info p-5 rounded">
+
+      <img src="img/3.jpg" class="img_clanky">
+      <h1 class="text-info mb-3">UI design</h1>
+      <p>
+        V tomto článku se zaměříme na designování hráčského rozhraní.
+      </p>
+      <h2 class="mt-4 mb-2">Rozdíl UI a UX</h2>
+      <p>
+        Mnoho lidí mezi sebou zaměňuje UI (User Interface) a UX (User eXperience) i přes to, že jsou to odlišné pojmy:
+        <br>
+        <strong class="text-info">UX</strong> se zabývá především psychologií svých hráčů. Kam se dívá, které věci ho
+        rozptylují a celkově jak bude nejspíše průměrný člověk hrou procházet. <br>
+        <strong class="text-info">UI</strong> se zabývá tvorbou samotného rozhraní, jeho rozložením a mnoha dalšími
+        prvky v těchto ohledech.
+      </p>
+      <p>
+        Ve zkratce se tedy UX zabývá tím, jak se bude hráč ve hře cítit a co bude nejspíš dělat, zatímco UI zajišťuje,
+        aby bylo vše uspořádané, snadno přístupné a zajímavé.
+      </p>
+      <h2 class="mt-4 mb-2">Druhy</h2>
+      <p>
+        Existuje mnoho věcí, které spadají do herního rozhraní. Od klasických ukazatelů životů na obrazovce,
+        nějakého metru výdrže, až po mapu a inventář. Každá hra má ale možnost si své jednotlivé položky upravovat a
+        aplikovat je novým a inovativním způsobem.
+      </p>
+      <p>
+        Můžeme si vybrat, jestli chceme mít inventář zpracovaný jako přehledné menu, do kterého se nám předměty
+        automaticky střádají, nebo z něj udělat jakousi minihru, ve které se musí hráč naučit naskládat své získané
+        objekty tak, aby maximalizoval svoji nosnost.
+      </p>
+      <p>
+        Dokonce i klasická záležitost jako je <u class="fw-bold">bar s životy</u>, může být zpracován alespoň třemi
+        různými způsoby:
+      <ol>
+        <li>počet životů může udávat číslice;</li>
+        <li>barevná lišta ze které ubývá, pokud má hráč životů méně;</li>
+        <li>abstraktní zpracování - ztrátu životů vykresluje zvyšující se množství krve na obrazovce nebo postupné
+          měnění a deformace
+          herního modelu.</li>
+      </ol>
+      </p>
+      <h2 class="mt-4 mb-2">Přesnost a přehlednost</h2>
+      <p>
+        Ať už se jedná o zpracování menu, inventáře nebo mapy, mělo by být naším cílem pohodlné, snadné a intuitivní
+        ovládání. Minimalizujeme tak dobu, kterou musí hráč strávit v inventáři nebo mapě. Můžeme toho dosáhnout
+        například rozdělením inventáře na přehledné kategorie. <br>
+        I klasické rozhraní na obrazovce by mělo být jednoduché.
+        Pokud zabereme více než čtvrt obrazovky vysvětlivkami a ukazateli, bude mít hráč nejen omezený pohled na
+        hru, ale bude nejspíš také značně rozptýlený, což povede k horšímu soustředění na hru.
+      </p>
+      <img src="img/X.jpg" class="img_clanky">
+      <h2 class="mt-4 mb-2">UI ve světě</h2>
+      <p>
+        Pod rozhraním si většina lidí představí pouze to, co je kolem hráče nebo zpracování menu. Můžou do něj patřit
+        ale i vysvětlivky a ukazatele ve světě. Jistě jste se již setkali s malými nápovědami jako (E), které
+        jsou prakticky u všech předmětů ve světě, se kterými můžete interagovat. Nemusí to ale být jen vysvětlivky.
+        Mnoho her implementuje různé způsoby speciálního vidění, které svět pozmění tak, aby hráč lépe
+        poznal, kudy se má vydat. Praktické jsou i ukazatele, které si hráč sám umístí na mapu - ty
+        se promítnou do světa a přesně ukazují pozici lokace, kterou si chce prohlédnout.
+      </p>
+      <h2 class="mt-4 mb-2">Ovlivňování obtížnosti</h2>
+      <p>
+        Ukazatele (ať už jsou jakkoliv zpracované) se mohou zdát jako banalita a něco, co hratelnost víceméně vůbec
+        neovlivňuje. V mnoha hrách
+        jsou to ale jedny z nejdůležitějších pomocníků. Často se dokonce stává, že má hra na vyšších obtížnostech méně a
+        méně ukazatelů, které hráči napovídají.</p>
+      <p>Minimalistická mapa s málo informacemi, stejně jako méně přesné životy a neznalost svého počtu nábojů může hru
+        značně ztížit. Dají se využívat i funkce, které hráči ukazují, co jejich akce
+        v budoucnu způsobí. Jejich přidáváním nebo naopak odebíráním můžeme ovlivňovat obtížnost hry.</p>
+      <p>Dobrým příkladem jsou jednoduché mobilní hry. Představme si hru s vymezeným prostorem a překážkami, kde úkolem
+        hráče je trefit míčkem nějaký cíl. Pokud hra nechá hráče míček jen tak vystřelit a ani mu neukáže
+        kam poletí, bude velmi obtížná. Naopak, pokud bude hra radit i přes 5 kroků dopředu, bude velmi jednoduchá a
+        hráče nebude nutit přemýšlet a vypočítávat trajektorii.
+      </p>
+      <h2 class="mt-4 mb-2">Nezasahování do prožitku</h2>
+      <p>
+        Velký počet novodobých her používá různé metody, jak ještě více zvýšit prožitek pomocí minimalizování svého
+        rozhraní. Jeden z nejčastějších způsobů, jak toho dosahují, je kompletní mizení menu. Hráč totiž nepotřebuje
+        prakticky žádné informace, když přijde na průzkum světa. Všechny ukazatele se mohou objevit až poté, co hráč
+        vezme do ruky zbraň nebo začne souboj (pokud vůbec nějaký hra obsahuje). Během průzkumu má tedy mnohem větší
+        prostor soustředit se na vše kolem něj a není ničím vyrušován.
+      </p>
+      <h2 class="mt-4 mb-2">UI jako součást světa</h2>
+      <p>
+        Dalším ze způsobů, jak neohrožovat hráčův prožitek, ale mít zároveň ve hře potřebné rozhraní, je jeho
+        zapracování do herního světa. Skvělým řešením je dát postavě do ruky mapu, kterou na hráčův
+        příkaz rozevře a začne se na ni dívat, místo toho, aby tato akce přenesla hráče do sekce s mapou, která je
+        kompletně odtržená od vlastní hry.
+      </p>
+      <p>
+        Nemusí to ale být jen mapa. Můžeme se setkat i s modely postav, které mají množství životů znázorněno na sobě
+        (ukazatel je součástí ruky nebo při poškození dojde ke změně vzhledu postavy). Hráč tak má informaci o tom,
+        kolik toho ještě vydrží, ale nenarušuje se herní prostředí umělým prvkem - vše do hry patří a zapadá.
+      </p>
+      <h2 class="mt-4 mb-2">Použití barev</h2>
+      <p>
+        Dalším ze způsobů, kterým může <strong class="text-info">UI designer</strong> zasahovat do herního světa, je
+        upravování jeho barev podle potřeby. Můžeme využít sytou, kontrastní barvu jako ukazatel, který zapadá do
+        daného světa.
+      </p>
+      <p>
+        Dobrým příkladem je hra <strong class="fw-bold">Mirror´s Edge</strong>, ve které má hráč překonávat různé překážky, vyskytující
+        se všude po městě. Hra umožňuje speciálního vidění objektů - všechny překážky, které půjdou překonat, se zbarví
+        na červeno. Barvy tak pomáhají hráči zjistit, kam se má vydat, aniž by byly nutné vysvětlivky nebo vyskakující
+        tabulky.
+      </p>
+      <h2 class="mt-4 mb-2">Rozdělení zajímavosti míst</h2>
+      <p>
+        V herním světě má hráč mnoho věcí, které může prozkoumat a vyzkoušet. Proto je dobré poskytnout lehkou nápovědu
+        o tom, co by ho mohlo/mělo zajímat. Často budou tato místa zvýrazněna na mapě.
+      </p>
+      <p>
+        Máme možnost oddělit od sebe obyčejná, méně podstatná místa, skýtající jen malou odměnu za prozkoumání a naopak
+        velkolepé, často i příběhově důležité prostory. Na mapu můžeme umisťovat libovolně velké značky různých typů a
+        opět využít barvy pro rozlišení důležitosti. Přehledná mapa je pro hladký průchod hrou zásadní a měla by hráče
+        dobře vést, ať už chce pouze projít hlavní cestu světa nebo dokončit každý, byť sebemenší úkol a mít vše splněno
+        na 100%.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-3 bg-primary text-white text-center position-relative vertical-alignment-center">
+    <div class="container pb-0">
+      <p>Copyright &copy; 2022 - <a href="O_mne.html" class="text-info text-decoration-none">Adam
+          Mlázovský</a></p>
+    </div>
+    <a href="#" class="position-absolute bottom-0 end-0 p-4">
+      <i class="bi bi-arrow-up-circle h1 text-info"></i>
+    </a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

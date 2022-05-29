@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hobby web pro herní design: článek 1 - Game Design úvod" />
+  <meta name="author" content="Adam Mlázovský" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+  <title>Systém design</title>
+</head>
+
+<body>
+  <!-- Navigace -->
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-5 pt-3 pb-1 fixed-top">
+    <a href="index.html" class="navbar-brand h4">Herní design </a><span class="text-info"> 5) Systém design</span>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto h5">
+        <li class="nav-item">
+          <a href="uvod_1.html" class="nav-link">1</a>
+        </li>
+        <li class="nav-item">
+          <a href="level_design_2.html" class="nav-link">2</a>
+        </li>
+        <li class="nav-item">
+          <a href="UI_design_3.html" class="nav-link">3</a>
+        </li>
+        <li class="nav-item">
+          <a href="Design_nepratel_4.html" class="nav-link">4</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link text-info">ZPĚT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!--Článek-->
+  <section class="p-4">
+
+    <div class="container border border-info p-5 rounded">
+
+      <img src="img/5.jpg" class="img_clanky">
+      <h1 class="text-info mb-3">Systém design</h1>
+      <p>
+        V tomto článku se budeme věnovat práci systém designerů, kteří jsou často známí jako "<strong
+          class="fw-bold">balance team</strong>".
+      </p>
+      <h2 class="mt-4 mb-2">Jak funguje balancování hry?</h2>
+      <p>
+        V základě máme za vším, co se ve hře děje, čísla. Každý úder, který naše postava způsobí nebo naopak dostane, je
+        jen kombinace mnoha různých čísel a výpočtů. Prací <strong class="text-info">systém designera</strong> je
+        zajistit, aby měli všichni hráči víceméně stejné možnosti a vyrovnané statistiky. Je velmi důležité, aby se
+        nikdo necítil být v nevýhodě, ani nezískal dojem, že hra je nefér.
+      </p>
+      <h2 class="mt-4 mb-2">Balancování her pro jednoho hráče</h2>
+      <p>
+        Herní balancování je mnohem důležitější u her více hráčů, především tedy v kompetitivních hrách, které hráče
+        staví proti sobě. To ale neznamená, že by hry pro jednoho hráče neměly mít systém designéry. Hra se upravuje
+        přes takzvané <strong class="text-info">patche</strong>. Herní společnost může do hry různé prvky přidávat a ty
+        stávající upravovat pomocí vydání takového patche. Většinou zároveň zveřejní seznam provedených změn, aby měli
+        hráči o změnách povědomí.
+      </p>
+      <p>
+        Při vydání her pro jednoho hráče se často stává, že je hra špatně vybalancovaná - je příliš jednoduchá nebo
+        naopak složitá. Vývojáři záhy po vydání dostanou rozsáhlou odezvu od herní komunity a po několika patchích
+        hru doladí. U her pro více hráčů je balancování výrazně složitější.
+      </p>
+      <h2 class="mt-4 mb-2">Symetrické a asymetrické hry</h2>
+      <p>
+        Multiplayer hry se dělí na dva základní typy: <strong class="text-info">symetrické hry</strong>, u kterých mají
+        oba hráči identické možnosti a <strong class="text-info">asymetrické hry</strong>, u kterých si hráči vybírají
+        z různých možností.
+      </p>
+      <p>
+        Symetrické hry, jako například šachy, jsou na balancování značně jednodušší. Mohli bychom upravit všechny
+        pěšce ve hře, aby se pohybovali jako královna. Hra by i nadále zůstala fér, protože by se změna aplikovala na
+        oba hráče.
+      </p>
+      <p>
+        Problém však nastává u asymetrických her. Pokud chceme, aby naše hra byla diverzní, budeme v ní mít nejspíš
+        mnoho originálních a zajímavých charakterů, ze kterých si může hráč vybírat. Tady začíná problém s
+        balancováním...
+      </p>
+      <h2 class="mt-4 mb-2">Rozpočet síly</h2>
+      <p>
+        Při vytváření nových postav, ale třeba i různých předmětů, musíme vypočítávat jejich sílu. Je užitečné
+        vytvořit si nějakou lištu/bar nebo číslo, podle kterého budeme sílu přidávat nebo ubírat. Například si můžeme
+        určit, jak cenná je v dané hře statistika poškození nebo naopak statistika výdrže a podle toho nové postavě
+        přidávat jednotlivé statistiky.
+      </p>
+      <p>
+        Pokud chceme vytvořit postavu s velmi vysokou výdrží, ale výdrž je v dané hře velmi ceněná a vzácná, přidávání
+        výdrže náš rozpočtový bar naplní rychleji než například poškození. Každá postava by měla mít stejně rozsáhlý
+        bar, jehož kombinace všech statistik bude podobně cenná, jako u ostatních postav.
+      </p>
+      <h2 class="mt-4 mb-2">Buffy a nerfy postav</h2>
+      <p>
+        Hlavním způsobem, kterým lze hru a postavy balancovat jsou takzvané <strong class="text-info">buffy</strong>
+        (posílení) a <strong class="text-info">nerfy</strong> (oslabení). Pokud si všimneme, že je určitá postava v
+        naší hře až příliš dominantní, máme možnost se s ní vypořádat různými způsoby. Nejjednodušší by byl nerf - je-li
+        postava příliš silná, zdá se její oslabení jako jasný krok. Zkušení designéři se ale shodují, že je lepší ve hře
+        provádět spíše buffy.
+      </p>
+      <p>
+        Hráči budou totiž vnímat ztrátu na své oblíbené postavě zhruba dvakrát víc, než posílení
+        (to je psychologicky dokázáno). Pokud tedy hra nemá desítky, či dokonce stovky různých postav, bude lepším
+        řešením nepatrně posílit ostatní postavy, čímž se nepřímo oslabí ta, která je příliš silná.
+      </p>
+      <h2 class="mt-4 mb-2">Countery</h2>
+      <p>
+        V mnoha online hrách nebo hrách obsahující prvky PvP (souboj několika hráčů proti sobě) se často
+        objevuje další faktor ovlivňující balancování hry: takzvané <strong class="text-info">countery</strong>.
+        Jedná se o určitou postavu ve hře, nebo i libovolný předmět, který je extrémně účinný proti konkrétní postavě
+        nebo herní mechanice. Tato síla může mít různou účinnost: od nevýrazné výhody, až po kompletní nehratelnost pro
+        nepřítele.
+      </p>
+      <p>
+        Už jsme si říkali, že při vývoji online hry budeme dříve nebo později potřebovat nějakou postavu,
+        či herní mechaniku oslabit, aby nebyla tolik dominantní. Jde to zařídit také posílením counteru, který
+        poté začnou hráči účinně využívat k negování síly problematické postavy.
+      </p>
+      <p>
+        Ve hrách je využívána i metoda tří navzájem se přebíjejících prvků (postav nebo mechanik). Jako ve hře
+        kámen, nůžky, papír. Máme jen tři možnosti volby, každá je “counterována” jednou další volbou a sama
+        “counteruje” také jednu volbu. Toto lze aplikovat i na videohry. Představme si tedy, že kámen
+        bude v naší hře poškození, nůžky budou léčení a papír bude představovat výdrž.
+        Vytvořili jsme tak velmi jednoduchý model, který nám ukazuje, že nejefektivnějším způsobem, jak porazit postavu
+        s vysokým poškozením je zvolení obrany atd.
+      </p>
+      <h2 class="mt-4 mb-2">Procentuální výhernost</h2>
+      <p>
+        Jak ale poznat, že bychom měli něco v naší hře vyladit (oslabit/posílit)? Už víme, že je důležitá odezva hráčů,
+        kterým je třeba naslouchat a pozorovat, jak hru hrají, případně jestli neobjevili nějakou skrytou, příliš
+        silnou mechaniku. Sbírat data ale můžeme i ze statistik. Můžeme si napsat program, který nám ukáže
+        výhernost každé postavy a metody hry, v nejlepším případě dokonce výhernost postav proti každé
+        další jednotlivé postavě. Z těchto čísel se dá při optimalizaci hry vycházet.
+      </p>
+      <p>
+        U procentuální výhernosti ale narazíme na jeden problémem. Představme si, že je ve hře určitý typ
+        útoku, který je velmi efektivní a kdokoliv ho používá, má extrémní výhodu proti soupeřům. Co když je ale
+        tento útok tak složitý a komplikovaný na provedení, že ho dokážou aplikovat pouze ti nejlepší hráči? V takové
+        chvíli by měl tento útok ve statistikách - dejme tomu 20% úspěšnost mezi méně zkušenými hráči a kupříkladu 90%
+        úspěšnost mezi hráči, kteří ho umí provést. Musíme proto zvážit, jestli se budeme soustředit hlavně na
+        zkušenější hráče a zajistíme, aby pro ně byla hra co nejlepší nebo se budeme soustředit především na širší
+        komunitu.
+      </p>     
+      <p>
+        Tímto tedy série článků o herním designu končí  <strong class="text-info"><i class="bi bi-emoji-smile"></i></strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-3 bg-primary text-white text-center position-relative vertical-alignment-center">
+    <div class="container pb-0">
+      <p>Copyright &copy; 2022 - <a href="O_mne.html" class="text-info text-decoration-none">Adam
+          Mlázovský</a></p>
+    </div>
+    <a href="#" class="position-absolute bottom-0 end-0 p-4">
+      <i class="bi bi-arrow-up-circle h1 text-info"></i>
+    </a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

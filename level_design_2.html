@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hobby web pro herní design: článek 1 - Game Design úvod" />
+  <meta name="author" content="Adam Mlázovský" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+  <title>Level design</title>
+</head>
+
+<body>
+  <!-- Navigace -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-5 pt-3 pb-1 fixed-top">
+    <a href="index.html" class="navbar-brand h4">Herní design </a><span class="text-info">2) Level design</span>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto h5">
+        <li class="nav-item">
+          <a href="uvod_1.html" class="nav-link">1</a>
+        </li>
+        <li class="nav-item">
+          <a href="UI_design_3.html" class="nav-link">3</a>
+        </li>
+        <li class="nav-item">
+          <a href="Design_nepratel_4.html" class="nav-link">4</a>
+        </li>
+        <li class="nav-item">
+          <a href="System_design_5.html" class="nav-link">5</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link text-info">ZPĚT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!--Článek-->
+  <section class="p-4">
+
+    <div class="container border border-info p-5 rounded">
+
+      <img src="img/2.jpg" class="img_clanky">
+      <h1 class="text-info mb-3">Level design</h1>
+      <p>
+        V tomto článku si přiblížíme práci <strong class="text-info">level desigéra</strong>. Ukážeme si příklady a
+        zásady, kterými je dobré se řídit při tvorbě konceptů, rozložení levelů a herního světa.
+      </p>
+      <h2 class="mt-4 mb-2">Učení hry</h2>
+      <p>
+        Začneme základními informacemi o strukturování a učící křivce v herním světě. Hra by měla obsahovat 4 oblasti,
+        které se vyvíjejí spolu s hráčem:
+      <ol>
+        <li class="pb-3">
+          <span class="fw-bold">ovládání hry</span> - ze začátku je nezbytné vysvětlit hráči jak se hra ovládá, jak
+          funguje a co má vlastně hráč dělat. Toto může být součástí tutoriálu oblasti (pokud hra nějakou má), nebo
+          můžeme na začátku hry vytvořit prostor s vysvětlivkami, bez komplikovaných mechanik.
+        </li>
+        <li class="pb-3">
+          <span class="fw-bold">nácvik</span> - oblast, kde si může hráč vše vyzkoušet. Má již nárok obsahovat nějaké
+          počáteční nepřátele, ale hlavně slouží k bližšímu seznámení a vstřebání celého ovládání.
+        </li>
+        <li class="pb-3">
+          <span class="fw-bold">výzva</span> - třetí oblast by měla být výzvou. Měla by otestovat hráčovu znalost a
+          ujistit se, že vše pochopil. Zvládnutí výzvy je zpravidla odměněno.
+        </li>
+        <li class="pb-3">
+          <span class="fw-bold">překvapení</span> - poslední oblast by měla vnést do hry překvapení, abychom se
+          vyvarovali monotónnosti a předvídavosti. Překvapení nemusí být nutně pozitivní.
+        </li>
+      </ol>
+      </p>
+      <p>
+        Všechny 4 zásady nemusí být aplikovány jen na úplném začátku hry. Celá tato sekvence se může opakovat
+        kdekoliv ve hře. Máme možnost průběžně představovat nové herní mechaniky, které bychom měli hráče řádně naučit,
+        nechat ho si je vyzkoušet, otestovat jeho schopnost a překvapit ho něčím navíc.
+      </p>
+      <p>
+        Díky dodržování těchto zásad nebude mít hráč pocit, že si neví rady. Bude se cítit, jako by mu jeho znalost
+        určitého způsobu hraní něco přinášela a byla užitečná. Vyvarujeme se také pocitu monotónnosti - stále se něco
+        děje, hra i hráč se vyvíjejí...
+      </p>
+      <h2 class="mt-4 mb-2">Intuitivnost a rozmanitost</h2>
+      <p>
+        Ideální level nebo oblast, by měli obsahovat dvě věci:<br>
+        <br>
+        <span class="fw-bold">1) INTUITIVNOST</span><br>
+        Hra by měla působit tak, aby hráč tušil, jakým způsobem se dostat k cíli, případně alespoň začal plánovat, jak
+        pokořit první část. Čas od času můžeme toto pravidlo porušit. Například plánujeme-li akční misi s množstvím
+        zmatku mezi úzkými uličkami města, je v pořádku trochu hráče zmást. Není ale žádoucí, aby se cítil zmatený a
+        dezorientovaný permanentně. V takovém případě by hrozila frustrace, které se chceme vyhnout. Je dobré najít
+        rovnováhu mezi navigací a matením.<br>
+        <br>
+        <span class="fw-bold">2) ROZMANITOST</span><br>
+        Pokud by hráč pouze přecházel z bodu A do bodu B, případně čas od času klikl na procházejícího nepřítele a
+        obdobnou sekvenci opakoval dvacetkrát po sobě, opět by se začal cítit monotónně. Je zapotřebí, aby oblasti
+        byly rozmanité, a to nejen vizuálně, ale i hratelností. <br>
+        Proč nedát hráči možnost obejít nepřítele zezadu pro taktičtější a jednodušší
+        výhru, kterou ještě nikdy předtím nedostal? Nebo ho třeba povzbudit možností získání nových předmětů, pokud
+        sejde ze své původně plánované cesty? Možností je mnoho, cíl je ale vždy stejný. Hráč by měl být více a více
+        zatažený do děje a nikdy se nedostat do pocitu monotónnosti.
+      </p>
+      <h2 class="mt-4 mb-2">Proměna světa</h2>
+      <p>
+        Svět kolem hráče by se měl vždy měnit. To neplatí pouze u procházení novějších lokací, které budou pochopitelně
+        vypadat odlišně od předešlých. Svět se může také měnit v důsledku akcí samotného hráče. Jeho akce mohou
+        reflektovat jedinečné dialogy s postavami, které jeho dřívější rozhodnutí například okomentují, nebo dodají svůj
+        pohled.
+      </p>
+      <p>
+        Měnit se ovšem může i celé prostředí. Vesnice, kterou hráč dříve procházel se například díky špatnému
+        rozhodnutí může změnit v trosky. Nic z toho ale nemusí být vázané pouze na rozhodnutí. Také hra, ve které hráč
+        nemá možnost ovlivňovat konečný výsledek, by se měla měnit a dávat mu pocit, že na jeho postavě v daném světě
+        záleží. Toto se aplikuje mnohem jednodušeji ve hrách pro jednoho hráče. Pokud bychom s postupem hráčů chtěli
+        měnit svět i v online hře, je to často řešeno jedinečnou vizí světa. Tedy, pokud by se setkali dva lidé, jeden,
+        který hru již dohrál a druhý, který teprve začíná, hráč, který hru předtím dohrál bude sám vidět lokaci
+        proměněnou, zatímco pro nováčka bude stále vypadat klasicky.
+      </p>
+      <p>
+        Případně jde vytvořit více identických světů a pouze dělat různé variace, do kterých hráče v požadovanou chvíli
+        pokládáme. Toto bude ale mít za následek řidší populaci a mohlo by dojít k zamezení kontaktu novějších a
+        starších hráčů.
+      </p>
+      <h2 class="mt-4 mb-2">Doplňování příběhu</h2>
+      <p>
+        I přes to, že <strong class="text-info">level designéři</strong> tolik nemluví do samotného příběhu, mají také
+        možnost se na něm podílet.
+        Pohlcující zážitek totiž vzniká ve chvíli, kdy věci a místa, o kterých hráč pouze slyšel, ve hře opravdu jsou a
+        příběh tak částečně doplňují. Nemusí to být ale pouze věci, o kterých se dalo slyšet již dříve. Jako level
+        designer máte možnost kamkoliv, ať už na skrytější, či otevřenější místo umístit kus informace, kterou by hráč
+        jinak nedostal. To může být cokoliv od obyčejného dopisu, který popisuje osud určité postavy, která by se už v
+        příběhu stejně neobjevila, až po velkolepou rytinu na zdi hradu přibližující jeho historii a stáří. Příběh
+        můžete hráči přiblížit mnoha originálními způsoby a je to opravdu dobrý způsob, jak ještě prohloubit jeho
+        prožitek.
+      </p>
+      <h2 class="mt-4 mb-2">Riskování</h2>
+      <p>
+        Chceme-li vytvořit novou a originální hru s inovativními mechanikami, je to určitý risk. Je obtížné odhadnout,
+        jestli nový koncept nebo mechanika, která se zatím v žádné jiné hře neobjevila, bude ve svém výsledku nejen
+        jedinečná, ale i zábavná.
+      </p>
+      <p>
+        Vytvořit něco originálního můžeme koneckonců v jakékoliv oblasti. Od zvláštního rozestavení nepřátel,
+        jedinečného umístění překážek, hraním si s výškou a prostorem, až po nejrůznější skryté místnosti a
+        přehlédnutelné vchody, ke kterým se hráč dostane pomocí jedinečných mechanik.
+      </p>
+      <p>
+        Ale i zdánlivě úžasný, inovativní nápad nemusí dopadnout ideálně. V tomto ohledu nám velmi pomohou testeři a
+        kritici, kteří s námi mohou sdílet svůj pohled na nápad.
+      </p>
+      <h2 class="mt-4 mb-2">Postup práce</h2>
+      <p>
+        Při tvorbě levelu, je potřeba si na začátku vždy říci, čeho chceme dosáhnout. Často nás bude zajímat jakou emoci
+        chceme v hráči probudit. Předtím, než vůbec začneme, si určíme, co je naším cílem, kterým se následně budeme
+        řídit. 
+      </p>
+      <p>
+        Pro vyvolání napětí a strachu je možné umístit za hráče nějaké monstrum, či jinou překážku,
+        která ho bude průběžně lovit, dokud nedokončí danou oblast. 
+      </p>
+      <p>
+        Má-li se hráč cítit zoufale (například pokud je příběhově jeho postava v opravdu špatné situaci), můžeme mu dát
+        téměř nesplnitelnou misi, a až na poslední chvíli mu poskytneme nějakou pomoc a zachráníme ho.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-3 bg-primary text-white text-center position-relative vertical-alignment-center">
+    <div class="container pb-0">
+      <p>Copyright &copy; 2022 - <a href="O_mne.html" class="text-info text-decoration-none">Adam
+          Mlázovský</a></p>
+    </div>
+    <a href="#" class="position-absolute bottom-0 end-0 p-4">
+      <i class="bi bi-arrow-up-circle h1 text-info"></i>
+    </a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
